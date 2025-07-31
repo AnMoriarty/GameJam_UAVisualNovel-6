@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://d0j35msg6ays5"]
+
+[ext_resource type="Script" uid="uid://dvym63rm5fxor" path="res://Stages/VN/Main.gd" id="1_1mslp"]
+[ext_resource type="PackedScene" uid="uid://dqjdsmyimevkv" path="res://Stages/Gameplay/Prototype.tscn" id="1_olyof"]
+[ext_resource type="Script" uid="uid://53j7sy2skggu" path="res://addons/dialogic/Core/DialogicGameHandler.gd" id="2_sqbcn"]
+
+[node name="Main" type="Node"]
+script = ExtResource("1_1mslp")
+
+[node name="Background3D" parent="." instance=ExtResource("1_olyof")]
+
+[node name="UI_Layer" type="CanvasLayer" parent="Background3D"]
+
+[node name="UI_Root" type="Control" parent="Background3D/UI_Layer"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="DialogicGameHandler" type="Node" parent="Background3D/UI_Layer/UI_Root"]
+script = ExtResource("2_sqbcn")
+metadata/_custom_type_script = "uid://53j7sy2skggu"

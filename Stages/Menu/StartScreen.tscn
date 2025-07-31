@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsksuqac4uwfp"]
+
+[ext_resource type="Script" uid="uid://bg57wixfo30io" path="res://Stages/Menu/StartScreen.gd" id="1_ljixw"]
+
+[node name="StartScreen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ljixw")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1158.0
+offset_bottom = 653.0
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 92.0
+offset_top = 499.0
+offset_right = 275.0
+offset_bottom = 522.0
+text = "Шепіт Минувших Днів"
+
+[node name="Button" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 91.0
+offset_top = 531.0
+offset_right = 286.0
+offset_bottom = 570.0
+text = "Почати гру"
