@@ -24,9 +24,16 @@ DialogicBridge="*res://Utilities/DialogicBridge.gd"
 [dialogic]
 
 directories/dch_directory={
-"Narrator": "res://Assets/Dialogues/Narrator.dch"
+"Alfonso": "res://TestStuff/Alfonso.dch",
+"Astrid": "res://TestStuff/Assets/Characters/Astrid/Astrid.dch",
+"Joska": "res://TestStuff/Assets/Characters/Joska/Joska.dch",
+"Lilly": "res://TestStuff/Assets/Characters/Lilly/Lilly.dch",
+"Lucas": "res://TestStuff/Assets/Characters/Lucas/Lucas.dch",
+"Narrator": "res://Assets/Dialogues/Narrator.dch",
+"Simone": "res://TestStuff/Simone.dch"
 }
 directories/dtl_directory={
+"TestTimeline": "res://TestStuff/TestTimeline.dtl",
 "test": "res://Assets/Dialogues/test.dtl"
 }
 glossary/default_case_sensitive=true
